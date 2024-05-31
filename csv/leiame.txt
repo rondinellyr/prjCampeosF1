@@ -1,0 +1,3 @@
+Aqui vai ficar armazenado 
+
+- arquivo com os dados raspados gerados pelo python
