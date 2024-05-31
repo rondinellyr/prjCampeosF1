@@ -1,0 +1,28 @@
+5 lotes
+https://www.guarigliaeventos.com.br/leilao/585/lotes
+
+https://www.guariglialeiloes.com.br/leilao/567/lotes?page=2
+
+usar este
+https://www.joaoemilio.com.br/leilao/4083/lotes
+
+
+
+
+
+1-abrir browser
+2-abrir site
+3-digitar url (pois nao vai ser o mesmo lote)
+4-acesse um site
+5-localize as informações
+5-capture
+6-Salvando esses dados em um arquivo .csv
+7-Criar banco e tabela na nuvem
+8-Abrir banco na nuvem
+9- enviar dados do arquivo .csv para o banco na nuvem
+10-gerar graficos no powerbi
+11-acessando dados na nuvem
+
+quando der esse erro 
+ElementClickInterceptedException
+forçar o click com javascript

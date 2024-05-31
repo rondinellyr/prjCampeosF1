@@ -1,0 +1,28 @@
+Projeto Final:
+
+Olá alunos,
+
+Para o projeto final do nosso curso, vocês terão a oportunidade de aplicar seus conhecimentos em Python, Webscrapping, Pymysql, Mysql e análise de dados com Power BI em um projeto prático e integrado. 
+O objetivo deste projeto é desenvolver uma solução que envolva a automação de tarefas web utilizando Selenium, criação de banco de dados e a análise dos dados extraídos utilizando o Power BI.
+
+Descrição do Projeto:
+
+Neste projeto, vocês irão:
+
+Desenvolver um script em Python com Selenium para extrair dados de um site de sua escolha (por exemplo, notícias, preços de produtos, dados climáticos, etc.).
+Criar o Banco de dados.
+Enviar os dados para o banco usando pymysql.
+Utilizar o Power BI para importar os dados extraídos e criar visualizações significativas, como gráficos, tabelas e painéis de controle.
+
+Entrega do Projeto:
+
+O projeto final deve ser apresentado no dia 28/05/2024.
+A apresentação deve resumidamente explicar o código-fonte do script Python e o arquivo do Power BI com as visualizações criadas.
+Inclua uma breve documentação descrevendo o objetivo do projeto, o site escolhido para extração de dados, as técnicas utilizadas e quaisquer instruções necessárias para executar o código e visualizar as análises no Power BI. (interessante falar as dificuldades e os meios usados para "superar" elas.)
+
+Se surgirem dúvidas durante o desenvolvimento do projeto, não hesitem em entrar em contato comigo, Thais, Allan, Daniel para obter orientação adicional.
+
+Estou ansioso para ver os resultados dos seus projetos finais!
+
+Atenciosamente,
+Acction

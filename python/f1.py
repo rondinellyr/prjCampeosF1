@@ -65,7 +65,7 @@ def gravarnobanco():
     # inserindo registro novo
     sqli = "INSERT INTO tbf1 (ID, ano, piloto, equipe, paisorigem, data_busca ) VALUES (%s, %s, %s, %s, %s, %s)"
 
-    with open('campeoes_f1.csv', 'r') as arqlido:
+    with open('/csv/campeoes_f1.csv', 'r') as arqlido:
         leitor_csv = csv.reader(arqlido, delimiter=";")
         for linha in leitor_csv:
             val = (linha[0], linha[1], linha[2], linha[3], linha[4], linha[5])
@@ -80,7 +80,7 @@ def gravarnobanco():
 
 ########## FUNCAO PARA DELETAR ARQ CSV
 def deleta_arq_csv():
-    nome_arquivo = "campeoes_f1.csv"
+    nome_arquivo = "/csv/campeoes_f1.csv"
     # Verifique se o arquivo existe e então o delete
     if os.path.isfile(nome_arquivo):
         os.remove(nome_arquivo)
@@ -92,7 +92,7 @@ def deleta_arq_csv():
 ########## FUNCAO PARA ESCREVER ARQ CSV
 def escreverarq(lista):
 
-    with open("campeoes_f1.csv", mode="a", encoding='utf-8', newline='') as arq_csv:
+    with open("/csv/campeoes_f1.csv", mode="a", encoding='utf-8', newline='') as arq_csv:
         escritor = csv.writer(arq_csv, delimiter=";")
         escritor.writerow(lista)
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
