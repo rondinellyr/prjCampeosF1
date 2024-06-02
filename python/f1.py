@@ -13,6 +13,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from funcoes import paispiloto
 
+caminho_csv = "E:\\00 - GITHUB\\prjCampeosF1\\csv\\campeoes_f1.csv"
+
 # Cria o driver para automatizar o navegador
 chrome_options = Options()
 # não fecha o chrome
@@ -65,7 +67,7 @@ def gravarnobanco():
     # inserindo registro novo
     sqli = "INSERT INTO tbf1 (ID, ano, piloto, equipe, paisorigem, data_busca ) VALUES (%s, %s, %s, %s, %s, %s)"
 
-    with open('/csv/campeoes_f1.csv', 'r') as arqlido:
+    with open(caminho_csv, "r") as arqlido:
         leitor_csv = csv.reader(arqlido, delimiter=";")
         for linha in leitor_csv:
             val = (linha[0], linha[1], linha[2], linha[3], linha[4], linha[5])
@@ -80,7 +82,7 @@ def gravarnobanco():
 
 ########## FUNCAO PARA DELETAR ARQ CSV
 def deleta_arq_csv():
-    nome_arquivo = "/csv/campeoes_f1.csv"
+    nome_arquivo = caminho_csv
     # Verifique se o arquivo existe e então o delete
     if os.path.isfile(nome_arquivo):
         os.remove(nome_arquivo)
@@ -92,7 +94,7 @@ def deleta_arq_csv():
 ########## FUNCAO PARA ESCREVER ARQ CSV
 def escreverarq(lista):
 
-    with open("/csv/campeoes_f1.csv", mode="a", encoding='utf-8', newline='') as arq_csv:
+    with open(caminho_csv, mode="a", encoding='utf-8', newline='') as arq_csv:
         escritor = csv.writer(arq_csv, delimiter=";")
         escritor.writerow(lista)
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -141,6 +143,9 @@ def raspagem():
 
         pais_do_piloto = paispiloto(piloto)
         escreverarq([str(cont), ano, piloto, equipe, pais_do_piloto, date.today()])
+
+    # vou gravar por ultimo 2023
+    escreverarq(['74', '2023', 'Max Verstappen', 'Red Bull', 'Holanda', date.today()])
 
     #arq_csv.close()
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
