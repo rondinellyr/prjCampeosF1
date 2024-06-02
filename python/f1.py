@@ -1,4 +1,5 @@
 import csv
+import infobd
 import os
 from datetime import date
 from time import sleep
@@ -31,11 +32,11 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 # FUNÇÃO PARA GRAVAR NO BD (NUVEM)
 def gravarnobanco():
     connection = pymysql.connect(
-        host='mysql-135933-0.cloudclusters.net',
-        user='rondinelly_ramos',
-        password='Rr@Acction2024',
-        database='DB_RONDINELLY_RAMOS',
-        port=10003
+        host=infobd.host,
+        user=infobd.user,
+        password=infobd.password,
+        database=infobd.database,
+        port=infobd.port
     )
     print(connection)
 
