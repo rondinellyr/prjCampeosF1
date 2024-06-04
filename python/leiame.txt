@@ -1,3 +1,4 @@
 Aqui vai ficar armazenado 
 
 - arquivo fonte gerados pelo python
+- arquivo com as informações do BD
